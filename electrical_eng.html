@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Electrical Engineering Exit Exam</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="electrical_eng.css">
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="exam-header">
+  <h2><i class="fas fa-bolt"></i> Electrical Engineering Exit Exam</h2>
+  <div class="timer">
+    <i class="fas fa-clock"></i>
+    <span id="time">25:00</span>
+  </div>
+</header>
+
+<!-- ================= YEAR SELECTION ================= -->
+<section class="year-buttons">
+  <button class="year-btn active" data-year="2015">2015</button>
+  <button class="year-btn locked" data-year="2016">2016 🔒</button>
+  <button class="year-btn locked" data-year="2017">2017 🔒</button>
+  <button class="year-btn locked" data-year="2018">2018 🔒</button>
+</section>
+
+<!-- ================= PAYMENT SECTION ================= -->
+<section id="paymentBox" class="payment hidden">
+  <h3><i class="fas fa-lock"></i> Unlock Exam</h3>
+  <p>
+    Pay using <b>Telebirr</b> or <b>CBE</b><br>
+    Upload payment screenshot to unlock exams
+  </p>
+  <input type="file" id="paymentProof" accept="image/*">
+  <button id="unlockBtn">
+    <i class="fas fa-unlock"></i> Confirm Payment
+  </button>
+</section>
+
+<!-- ================= EXAM AREA ================= -->
+<section class="exam-container">
+  <h3 id="question">Question text</h3>
+
+  <form id="options" class="options">
+    <!-- Options injected by JS -->
+  </form>
+
+  <div class="nav-buttons">
+    <button id="back">
+      <i class="fas fa-arrow-left"></i> Back
+    </button>
+
+    <button id="next">
+      Next <i class="fas fa-arrow-right"></i>
+    </button>
+  </div>
+
+  <button id="submit" class="submit-btn">
+    <i class="fas fa-paper-plane"></i> Submit Exam
+  </button>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="exam-footer">
+  <button onclick="location.href='index.html'">
+    <i class="fas fa-home"></i> Back to Home
+  </button>
+</footer>
+
+<script src="electrical_eng.js"></script>
+</body>
+</html>
