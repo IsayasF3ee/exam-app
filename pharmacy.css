@@ -1,0 +1,104 @@
+body{
+  font-family: Arial, sans-serif;
+  background:#f4f6f8;
+  margin:0;
+}
+
+header{
+  background:#0b5ed7;
+  color:#fff;
+  padding:15px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.year-buttons{
+  display:flex;
+  gap:10px;
+  padding:15px;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+
+.year-btn{
+  padding:10px 18px;
+  border:none;
+  cursor:pointer;
+  border-radius:6px;
+  background:#198754;
+  color:white;
+}
+
+.year-btn.locked{
+  background:#6c757d;
+}
+
+.year-btn.active{
+  background:#0d6efd;
+}
+
+.exam-box{
+  background:white;
+  max-width:800px;
+  margin:20px auto;
+  padding:20px;
+  border-radius:10px;
+  box-shadow:0 0 10px rgba(0,0,0,.1);
+}
+
+#options label{
+  display:block;
+  padding:10px;
+  margin:8px 0;
+  border-radius:6px;
+  border:1px solid #ccc;
+  cursor:pointer;
+}
+
+#options label.correct{
+  background:#d4edda;
+  border-color:#198754;
+}
+
+#options label.wrong{
+  background:#f8d7da;
+  border-color:#dc3545;
+}
+
+.nav{
+  display:flex;
+  justify-content:space-between;
+  margin-top:15px;
+}
+
+button{
+  padding:10px 16px;
+  border:none;
+  border-radius:6px;
+  cursor:pointer;
+}
+
+#submit{
+  width:100%;
+  background:#dc3545;
+  color:white;
+  margin-top:15px;
+}
+
+.payment{
+  max-width:600px;
+  margin:20px auto;
+  background:white;
+  padding:20px;
+  border-radius:10px;
+  text-align:center;
+}
+
+.hidden{
+  display:none;
+}
+
+@media(max-width:600px){
+  .exam-box{margin:10px;}
+}

@@ -1,0 +1,167 @@
+/* ----------------------------
+Computer Science Exam Styles
+---------------------------- */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg, #4b6cb7, #182848);
+    color: #333;
+}
+
+.header {
+    background: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 22px;
+    color: #4b6cb7;
+}
+
+.header nav a {
+    text-decoration: none;
+    color: #4b6cb7;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+#timer {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.exam-years {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.exam-year-btn {
+    padding: 10px 20px;
+    border: none;
+    background: #4b6cb7;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+.exam-year-btn:hover {
+    background: #182848;
+}
+
+.exam-year-btn.locked {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+#payment-section {
+    background: #f0f0f0;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+#payment-section h3 {
+    margin-top: 0;
+}
+
+#payment-section input {
+    display: block;
+    margin: 10px 0;
+}
+
+#confirm-payment {
+    padding: 10px 15px;
+    background: #4b6cb7;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#confirm-payment:hover {
+    background: #182848;
+}
+
+#exam-form {
+    margin-top: 20px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.question-card {
+    margin-bottom: 15px;
+}
+
+.question-card h4 {
+    margin-bottom: 10px;
+}
+
+.question-card label {
+    display: block;
+    padding: 8px;
+    border-radius: 6px;
+    margin-bottom: 6px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    transition: all 0.3s ease;
+}
+
+.question-card label.correct {
+    background: #d4edda;
+    border-color: #28a745;
+}
+
+.question-card label.wrong {
+    background: #f8d7da;
+    border-color: #dc3545;
+}
+
+.nav-buttons {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.nav-buttons button, #submit-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    background: #4b6cb7;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.nav-buttons button:hover, #submit-btn:hover {
+    background: #182848;
+}
+
+#submit-btn {
+    margin-top: 20px;
+    display: none;
+}
+
+.footer {
+    text-align: center;
+    padding: 15px;
+    background: #fff;
+    margin-top: 40px;
+    box-shadow: 0 -3px 6px rgba(0,0,0,0.2);
+}

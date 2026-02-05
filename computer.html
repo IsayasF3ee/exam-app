@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Computer Science Exit Exam</title>
+<link rel="stylesheet" href="computer.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+<header class="header">
+    <div class="header-container">
+        <h1>Computer Science Exit Exam</h1>
+        <nav>
+            <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+    <div id="timer">Time Left: 15:00</div>
+
+    <div class="exam-years">
+        <button class="exam-year-btn" data-year="2015">2015 Exam</button>
+        <button class="exam-year-btn locked" data-year="2016">2016 Exam 🔒</button>
+        <button class="exam-year-btn locked" data-year="2017">2017 Exam 🔒</button>
+        <button class="exam-year-btn locked" data-year="2018">2018 Exam 🔒</button>
+    </div>
+
+    <!-- Payment Section -->
+    <div id="payment-section" style="display:none; margin:20px 0;">
+        <h3><i class="fa-solid fa-money-bill-wave"></i> Upload Payment Screenshot</h3>
+        <p>Select Telebirr or CBE payment screenshot:</p>
+        <input type="file" id="payment-screenshot" accept="image/*">
+        <button id="confirm-payment"><i class="fa-solid fa-check"></i> Confirm Payment</button>
+    </div>
+
+    <form id="exam-form"></form>
+
+    <div class="nav-buttons">
+        <button id="back-btn"><i class="fa-solid fa-arrow-left"></i> Back</button>
+        <button id="next-btn"><i class="fa-solid fa-arrow-right"></i> Next</button>
+    </div>
+
+    <button id="submit-btn"><i class="fa-solid fa-paper-plane"></i> Submit Exam</button>
+</main>
+
+<footer class="footer">
+    <p>© 2026 Exit Exam Ethiopia | All Rights Reserved</p>
+</footer>
+
+<script src="computer.js"></script>
+</body>
+</html>

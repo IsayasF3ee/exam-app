@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Register - Exit Exam Portal</title>
+<link rel="stylesheet" href="auth.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="auth-container">
+    <h2><i class="fa-solid fa-user-plus"></i> Register</h2>
+    <form id="register-form">
+        <div class="input-group">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" id="fullname" placeholder="Full Name" required>
+        </div>
+        <div class="input-group">
+            <i class="fa-solid fa-envelope"></i>
+            <input type="email" id="email" placeholder="Email" required>
+        </div>
+        <div class="input-group">
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" id="password" placeholder="Password" required>
+        </div>
+        <div class="input-group">
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" id="confirm-password" placeholder="Confirm Password" required>
+        </div>
+        <div class="input-group">
+            <i class="fa-solid fa-building-columns"></i>
+            <select id="university" required>
+                <option value="">Select University</option>
+                <option value="Rift Valley">Rift Valley University</option>
+                <option value="Addis Ababa">Addis Ababa University</option>
+                <option value="Bahir Dar">Bahir Dar University</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <select id="department" required>
+                <option value="">Select Department</option>
+                <option value="Computer Science">Computer Science</option>
+                <option value="IT">IT</option>
+                <option value="Engineering">Engineering</option>
+                <option value="Health">Health</option>
+                <option value="Social">Social</option>
+            </select>
+        </div>
+        <button type="submit"><i class="fa-solid fa-paper-plane"></i> Register</button>
+        <p class="switch-form">Already have an account? <a href="login.html"><i class="fa-solid fa-right-to-bracket"></i> Login</a></p>
+    </form>
+</div>
+
+<script src="auth.js"></script>
+</body>
+</html>
